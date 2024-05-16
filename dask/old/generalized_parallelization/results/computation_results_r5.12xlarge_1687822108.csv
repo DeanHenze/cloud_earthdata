@@ -1,0 +1,2 @@
+n_workers,threads_per_worker,n_files,compute_time_seconds,ec2_type
+48,1,10,21,r5.12xlarge
