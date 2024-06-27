@@ -1,0 +1,3 @@
+*.ipynb_checkpoints/
+*.DS_Store
+dask_with_earthdata_starters/ancillary/generalized_parallelization/results/
