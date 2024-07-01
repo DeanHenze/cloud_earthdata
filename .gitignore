@@ -1,3 +1,8 @@
 *.ipynb_checkpoints/
 *.DS_Store
-dask_with_earthdata_starters/ancillary/generalized_parallelization/results/
+dask/ancillary/generalized_parallelization/results/
+coiled/presentations_all/
+scratch/
+learning/
+ancillary/Tutorials_TEMPLATE.ipynb
+ancillary/WM2015_first_submission.pdf
