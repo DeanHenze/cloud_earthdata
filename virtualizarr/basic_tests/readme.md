@@ -11,3 +11,5 @@
 * **`vds_icechunk_test01.ipynb`**: Tests saving a reference file to icechunk format and using it locally. Creates ref file from the first 100 files of the CCMP_WINDS_10M6HR_L4_V3.1 collection.
 
 * **`kerchunk_vs_virtualizarr.ipynb`**: Creates a virtual reference file for a ~year long time period of the OSTIA-UKMO-L4-GLOB-REP-v2.0 data set, first with kerchunk then with virtualizarr. Compares the time to open and plot some data using each reference file.
+
+* **`access_icechunk_store.ipynb`**: Accesses and uses an icechunk store located on PO.DAAC (e.g. PO.DAAC https endpoint). Uses the store to access and perform basic computations on the underlying data set. The functions for accessing the store could be used as templates for similar functionality in earthaccess.
