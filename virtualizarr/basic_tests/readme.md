@@ -13,3 +13,5 @@
 * **`kerchunk_vs_virtualizarr.ipynb`**: Creates a virtual reference file for a ~year long time period of the OSTIA-UKMO-L4-GLOB-REP-v2.0 data set, first with kerchunk then with virtualizarr. Compares the time to open and plot some data using each reference file.
 
 * **`access_icechunk_store.ipynb`**: Accesses and uses an icechunk store located on PO.DAAC (e.g. PO.DAAC https endpoint). Uses the store to access and perform basic computations on the underlying data set. The functions for accessing the store could be used as templates for similar functionality in earthaccess.
+
+* **`vds_basic_L2_example`**: Basic L2 dataset here refers to a dataset with just the 1D dimensions along_track, cross_track, which have the same sizes accross all files. This notebook shows an example of creating a VDS along a newly created dimension, combining the individual files along both a time dummy dim, and a "granule ID" dummy dim. It is shown that combined with earthaccess's spatial search, this VDS can also be used for spatial search, as well as temporal search.
