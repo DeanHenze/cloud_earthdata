@@ -2,6 +2,8 @@
 
 ### Directory contents
 
+**Contents of `virtualizarr_v1x` directory (all notebooks use version 1.x):**
+
 * **`virtualizarr_test01.ipynb`**: Create combined reference file for 10 data files from the MUR25-JPL-L4-GLOB-v04.2 collection. Trying creating reference files both using the native netCDF files and using the pre-created DMRPP files.
 
 * **`virtualizarr_test02.ipynb`**: Compare performance of reference files with S3 vs HTTPS endpoint locations. Test lazy loading and basic computation / plotting.
@@ -15,3 +17,12 @@
 * **`access_icechunk_store.ipynb`**: Accesses and uses an icechunk store located on PO.DAAC (e.g. PO.DAAC https endpoint). Uses the store to access and perform basic computations on the underlying data set. The functions for accessing the store could be used as templates for similar functionality in earthaccess.
 
 * **`vds_basic_L2_example`**: Basic L2 dataset here refers to a dataset with just the 1D dimensions along_track, cross_track, which have the same sizes accross all files. This notebook shows an example of creating a VDS along a newly created dimension, combining the individual files along both a time dummy dim, and a "granule ID" dummy dim. It is shown that combined with earthaccess's spatial search, this VDS can also be used for spatial search, as well as temporal search.
+
+
+**Contents of `virtualizarr_v2x` directory (all notebooks use version 2.x):**
+
+* **`open_icechunk_s3.ipynb`**: First working example of accessing an Icechunk store on PO.DAAC bucket using S3 access for both the store and the underlying data. Have to be in-cloud.
+
+* **`sassie_ecco_vz2/`**: Folder containing several notebooks used to create VDS's for the SASSIE ECCO project, utilizing parallization during VDS creation. An important one is `vz2_sassie_ecco_par.ipynb` which is the current working version - this notebook can be used to develop more general code for generating VDS's with parallization in virtualizarr v2.x.
+
+* **`virtualizarr_v2x_test.ipynb`** and **`vz2_minimum_example.ipynb`**: Some first attempts at using virtualizarr v2.x to create and access a VDS without parallelization.
